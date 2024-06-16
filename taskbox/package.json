@@ -14,6 +14,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@storybook/preset-create-react-app": "^8.1.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -29,10 +30,11 @@
     "@storybook/addon-essentials": "^8.1.4",
     "@storybook/addon-interactions": "^8.1.4",
     "@storybook/addon-links": "^8.1.4",
+    "@storybook/addon-storyshots": "^7.6.17",
     "@storybook/blocks": "^8.1.4",
-    "@storybook/builder-vite": "^8.1.5",
     "@storybook/react": "^8.1.4",
     "@storybook/react-vite": "^8.1.4",
+    "@storybook/react-webpack5": "8.1.9",
     "@storybook/test": "^8.1.4",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
@@ -45,6 +47,7 @@
     "msw": "^2.3.0",
     "msw-storybook-addon": "^2.0.2",
     "prop-types": "^15.8.1",
+    "react-test-renderer": "^18.3.1",
     "storybook": "^8.1.4",
     "vite": "^5.2.0"
   },
