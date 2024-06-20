@@ -1,4 +1,5 @@
 import ProfileBox from './ProfileBox';
+
 export default {
   title: 'ProfileBox',
   component: ProfileBox,
@@ -14,40 +15,27 @@ export default {
       },
     },
     variant: {
+      options: ['vertical', 'horizontal'],
       control: {
-        type: 'select',
-        options: ['vertical', 'horizontal'],
+        type: 'radio',
       },
     },
   },
+  decorators: [(story) => <div style={{ width: '390px' }}>{story()}</div>],
 };
 
-export const Overview = () => {
-  return (
-    <>
-      <div className="wrapper">
-        <div>vertical profile</div>
-        <ProfileBox imgUrl="/defaultProfile.png" name="영남회장" variant="vertical" />
-      </div>
-      <div className="wrapper">
-        <div>horizontal profile</div>
-        \ <ProfileBox imgUrl="/defaultProfile.png" name="영남회장" variant="horizontal" />
-      </div>
-    </>
-  );
+const Template = (args) => <ProfileBox {...args} />;
+
+export const VerticalProfile = Template.bind({});
+VerticalProfile.args = {
+  imgUrl: '/defaultProfile.png',
+  name: '영남회장',
+  variant: 'vertical',
 };
 
-export const VerticalProfile = () => {
-  return (
-    <div className="wrapper">
-      <ProfileBox imgUrl="/defaultProfile.png" name="영남회장" variant="vertical" />
-    </div>
-  );
-};
-export const HorizontalProfile = () => {
-  return (
-    <div className="wrapper">
-      <ProfileBox imgUrl="/defaultProfile.png" name="영남회장" variant="horizontal" />
-    </div>
-  );
+export const HorizontalProfile = Template.bind({});
+HorizontalProfile.args = {
+  imgUrl: '/defaultProfile.png',
+  name: '영남회장',
+  variant: 'horizontal',
 };
