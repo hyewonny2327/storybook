@@ -1,0 +1,21 @@
+.card {
+  width: 20.8rem;
+  height: 8.8rem;
+  background-color: gray;
+  border-radius: 0.6rem;
+  @include flex-center-col;
+  @include font-body1;
+}
+.card.green1 {
+  background-color: #f5f7ce;
+}
+
+.card.green2 {
+  background-color: #eaef9d;
+}
+.card.green3 {
+  background-color: #c1d95f;
+}
+.card.yellow {
+  background-color: #fde1a0;
+}

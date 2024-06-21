@@ -5,7 +5,7 @@ import { IoChevronBack } from 'react-icons/io5';
 export default function TitleNav({ title }) {
   return (
     <div>
-      <div className="titleContainer">
+      <div className="title-nav">
         <div className="backBtn">
           <IoChevronBack color="#498428" size={'1.5rem'} />
         </div>

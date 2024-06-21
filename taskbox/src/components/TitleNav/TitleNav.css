@@ -1,5 +1,5 @@
 
-.titleContainer {
+.title-nav {
     width: 100%;
     display: flex;
     align-items: center;
@@ -11,8 +11,9 @@
         color: #498428;
         font-weight:800;
     }
+    .backBtn {
+        cursor: pointer;
+        // margin-right:auto;
+    }
 }
-.backBtn {
-    cursor: pointer;
-    // margin-right:auto;
-}
+
